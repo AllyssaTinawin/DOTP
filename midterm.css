@@ -1,0 +1,122 @@
+<html>
+<head>
+    <title>Midterm Lab Exam</title>
+	 <style>
+
+        *{
+            box-sizing: border-box;
+        }
+		
+		img {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 20%;
+		  background-color: gray;
+		  
+		  
+		  
+		}
+
+        body{
+            margin: 0;
+        }
+
+        .header{
+            text-align: center;
+			font-size: 8px;
+            padding: 3px;
+			background-color: gray;
+        }
+
+        ul {
+        background-color: midnightblue;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    li {
+        float: left;
+    }
+    .dropdown {
+        display: inline-block;
+    }
+    li a, .btn_dropdown {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding: 10px 13px;
+        text-align: center;
+    }
+    .options {
+        min-width: 150px;
+        display: none;
+        position: absolute;
+        background-color: maroon;
+    }
+    .options a {
+        text-align: left;
+        padding: 6px 12px;
+        color: white;
+        display: block;
+    }
+    .options a:hover {
+        background-color: red;
+    }
+    li a:hover, .btn_dropdown:hover, .dropdown:hover {
+        background-color: maroon;
+    }
+    .dropdown:hover .options {
+    display: block;
+        
+    }
+	
+        .currentlink{
+            background-color: violet;
+        }
+        
+        .column{
+            float: left;
+            padding: 10px;
+        }
+        
+		.column.side{
+            width: 30%;
+            
+        } 
+
+        .column.middle{
+            width: 60%;
+		}
+			
+		div.gallery {
+		margin: 5px;
+		border: 1px solid #ccc;
+		float: left;
+		width: 180px;
+    
+        }
+
+        /* Clear floats after the column */
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - makes the three column stack o ntop of each other instead of next to each other*/
+
+        @media screen and (max-width: 600px){
+            .column.side, .column.middle-main{
+                width: 100%;
+            }
+        }
+        .footer{
+            background-color: gray;
+            padding: 1px;
+            text-align: center;
+        }
+    </style>
+</head>
+</html>
